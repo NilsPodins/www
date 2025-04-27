@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <a href="main.html" class="logo"></a>
+            <div class="combine">
+                <input id="search" type="text" class="search-bar" placeholder="Ko vēlaties atrast?">
+                <i class="search-icon fa-solid fa-magnifying-glass" style="display: flex;"></i>
+            </div>
+            <ul class="user-menu">
+                <li><a href="#" onclick="openForm()" id="openForm" class="profile"><i class="fa-solid fa-user"
+                            style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
+                <li><a href="wishlist.html" class="wish-list"><i class="fa-solid fa-heart"
+                            style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
+                <li><a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"
+                            style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="main-box">
+
+            <div class="cat-box">
+                <div class="category">
+                    <ul class="list">
+                        <li class="border"><a href="#" id="showNew" class="menu-option">Datortehnika</a>
+                            <div id="New">
+                                <div class="gap-60">
+                                    <div class="col">
+                                        <a href="#" class="cat">Portatīvie datori un aksesuāri</a>
+                                        <a href="#" class="under-cat">Portatīvie datori</a>
+                                        <a href="#" class="under-cat">Somas, apvalki portatīvajiem datoriem</a>
+                                        <a href="#" class="under-cat">Lādētāji, adapteri portatīvajiem datoriem</a>
+                                        <a href="#" class="under-cat">Baterijas portatīvajiem datoriem</a>
+                                        <a href="#" class="cat">Monitori, personālie datori un UPS</a>
+                                        <a href="#" class="under-cat">Monitori</a>
+                                        <a href="#" class="under-cat">Personālie datori</a>
+                                        <a href="#" class="under-cat">Stiprinājumi monitoriem</a>
+                                        <a href="#" class="under-cat">Pagarinātāji un sprieguma stabilizatori</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Austiņas, mikrofoni un datoru skaļruņi</a>
+                                        <a href="#" class="under-cat">Austiņas</a>
+                                        <a href="#" class="under-cat">Bezvadu skaļruņi</a>
+                                        <a href="#" class="under-cat">Datoru skaļruņi</a>
+                                        <a href="#" class="under-cat">Mikrofoni</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Perifērija un programmatūra</a>
+                                        <a href="#" class="under-cat">Peles</a>
+                                        <a href="#" class="under-cat"> Programmatūra</a>
+                                        <a href="#" class="under-cat">USB centrmezgli (USB hub) </a>
+                                        <a href="#" class="under-cat">Klaviatūras</a>
+                                        <a href="#" class="cat">Datu nesēji</a>
+                                        <a href="#" class="under-cat">Atmiņas kartes</a>
+                                        <a href="#" class="under-cat"> USB atmiņas kartes</a>
+                                        <a href="#" class="under-cat"> Ārējie cietie diski</a>
+                                        <a href="#" class="under-cat">Atmiņas karšu lasītāji</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Gaming ekipējums</a>
+                                        <a href="#" class="under-cat">Austiņas datorspēlēm</a>
+                                        <a href="#" class="under-cat">Peles datorspēlēm</a>
+                                        <a href="#" class="under-cat">Klaviatūras datorspēlēm</a>
+                                        <a href="#" class="under-cat">Gaming krēsli</a>
+                                        <a href="#" class="under-cat">Spēļu konsoles</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" id="showMen" class="menu-option">Drēbes</a>
+                            <div id="Men">
+                                <div class="gap-60">
+                                    <div class="col">
+                                        <a href="#" class="cat">Sieviešu apavi</a>
+                                        <a href="#" class="under-cat">Kurpes un sandales sievietēm</a>
+                                        <a href="#" class="under-cat">Brīvā laika apavi sievietēm</a>
+                                        <a href="#" class="under-cat">Sporta apavi sievietēm</a>
+                                        <a href="#" class="under-cat">Zābaki un puszābaki sievietēm</a>
+                                        <a href="#" class="under-cat">Gumijas zābaki sievietēm</a>
+                                        <a href="#" class="under-cat">Piederumi apaviem</a>
+                                        <a href="#" class="cat">Bērnu apavi</a>
+                                        <a href="#" class="under-cat">Kurpes un sandales bērniem</a>
+                                        <a href="#" class="under-cat">Brīvā laika apavi bērniem</a>
+                                        <a href="#" class="under-cat">Sporta apavi bērniem</a>
+                                        <a href="#" class="under-cat">Bērnu pludmales un baseina čības</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Vīriešu apavi</a>
+                                        <a href="#" class="under-cat">Kurpes un sandales vīriešiem</a>
+                                        <a href="#" class="under-cat">Brīvā laika apavi vīriešiem</a>
+                                        <a href="#" class="under-cat">Sporta apavi vīriešiem</a>
+                                        <a href="#" class="under-cat">Zābaki un puszābaki vīriešiem</a>
+                                        <a href="#" class="under-cat">Gumijas zābaki vīriešiem</a>
+                                        <a href="#" class="under-cat">Pludmales un baseina čības</a>
+                                        <a href="#" class="cat">Vīriešu rotas, pulksteņi un aksesuāri</a>
+                                        <a href="#" class="under-cat">Mugursomas, sporta somas</a>
+                                        <a href="#" class="under-cat">Saulesbrilles</a>
+                                        <a href="#" class="under-cat">Vīriešu rokas pulksteņi</a>
+                                        <a href="#" class="under-cat">SB</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Sieviešu apģērbs</a>
+                                        <a href="#" class="under-cat">Sieviešu sporta un fitnesa krekli</a>
+                                        <a href="#" class="under-cat">Sieviešu sporta bikses, legingi un šorti</a>
+                                        <a href="#" class="under-cat">Sieviešu ziemas jakas</a>
+                                        <a href="#" class="under-cat">Sieviešu krekli tūrismam</a>
+                                        <a href="#" class="under-cat">Sieviešu džemperi tūrismam</a>
+                                        <a href="#" class="under-cat">Sieviešu jakas un vestes tūrismam</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Vīriešu apģērbs</a>
+                                        <a href="#" class="under-cat">Sporta tērpi vīriešiem</a>
+                                        <a href="#" class="under-cat">Vīriešu jakas un džemperi sportam</a>
+                                        <a href="#" class="under-cat">Vīriešu sporta un fitnesa krekli</a>
+                                        <a href="#" class="under-cat">Vīriešu bikses un šorti tūrismam</a>
+                                        <a href="#" class="under-cat">Vīriešu jakas un vestes tūrismam</a>
+                                        <a href="#" class="under-cat">Vīriešu džemperi tūrismam</a>
+                                        <a href="#" class="under-cat">GamersWear</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" id="showWomen" class="menu-option">Mēbeles</a>
+                            <div id="Women">
+                                <div class="gap-60">
+                                    <div class="col">
+                                        <a href="#" class="cat">Guļamistaba</a>
+                                        <a href="#" class="under-cat">Gultas</a>
+                                        <a href="#" class="under-cat">Naktsskapīši</a>
+                                        <a href="#" class="under-cat">Kumodes</a>
+                                        <a href="#" class="under-cat">Matrači</a>
+                                        <a href="#" class="under-cat">Tualetes galdiņi</a>
+                                        <a href="#" class="under-cat">Skapji</a>
+                                        <a href="#" class="under-cat">Guļamistabas komplekti</a> </a>
+                                        <a href="#" class="cat">Bērnu istaba</a>
+                                        <a href="#" class="under-cat">Bērnu galdi un krēsli</a>
+                                        <a href="#" class="under-cat">Bērnu un pusaudžu gultas</a>
+                                        <a href="#" class="under-cat">Divstāvgultas</a>
+                                        <a href="#" class="under-cat">Bērnu istabas mēbeļu komplekti</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Virtuve</a>
+                                        <a href="#" class="under-cat">Ēdamistabas komplekti un virtuves stūri</a>
+                                        <a href="#" class="under-cat">Galdi</a>
+                                        <a href="#" class="under-cat">Bāra krēsli</a>
+                                        <a href="#" class="under-cat">Virtuves komplekti</a>
+                                        <a href="#" class="under-cat">Virtuves skapīši</a>
+                                        <a href="#" class="under-cat">Krēsli</a>
+                                        <a href="#" class="under-cat">Bāra galdi</a>
+                                        <a href="#" class="cat">Priekšnams</a>
+                                        <a href="#" class="under-cat">Apavu skapīši un plaukti</a>
+                                        <a href="#" class="under-cat">Priekšnama drēbju pakaramie</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Viesistaba</a>
+                                        <a href="#" class="under-cat">Dīvāni</a>
+                                        <a href="#" class="under-cat">Atpūtas krēsli</a>
+                                        <a href="#" class="under-cat">Pufi un sēžammaisi</a>
+                                        <a href="#" class="under-cat">Žurnālgaldiņi</a>
+                                        <a href="#" class="under-cat">TV galdiņi</a>
+                                        <a href="#" class="under-cat">Plaukti</a>
+                                        <a href="#" class="under-cat">Krēsli</a>
+                                        <a href="#" class="under-cat">Piekaramie plaukti</a>
+                                        <a href="#" class="under-cat">Viesistabas komplekti</a>
+                                        <a href="#" class="under-cat">Kumodes</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Vannas istaba</a>
+                                        <a href="#" class="under-cat">Vannas istabas komplekti</a>
+                                        <a href="#" class="under-cat">Skapīši vannas istabai</a>
+                                        <a href="#" class="cat">Citas mēbeles</a>
+                                        <a href="#" class="under-cat">Noliktavas plaukti</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" id="showKids" class="menu-option">Zoo preces</a>
+                            <div id="Kids">
+                                <div class="gap-60">
+                                    <div class="col">
+                                        <a href="#" class="cat">Suņiem</a>
+                                        <a href="#" class="under-cat">Piederumi vannas istabai</a>
+                                        <a href="#" class="under-cat">Mitrā barība (konservi) suņiem</a>
+                                        <a href="#" class="under-cat">Gardumi suņiem</a>
+                                        <a href="#" class="under-cat">Barības piedevas un vitamīni suņiem</a>
+                                        <a href="#" class="under-cat">Pavadas un kakla siksnas</a>
+                                        <a href="#" class="under-cat">Barošanas trauki</a>
+                                        <a href="#" class="under-cat">Somas, būri un piederumi transportēšanai</a>
+                                        <a href="#" class="under-cat">Aprūpes piederumi</a>
+                                        <a href="#" class="under-cat">Kopšanas līdzekļi suņiem</a>
+                                        <a href="#" class="under-cat">Rotaļlietas suņiem</a>
+                                        <a href="#" class="under-cat">Guļvietas</a>
+                                        <a href="#" class="under-cat">Apģērbs un zābaciņi suņiem</a>
+                                        <a href="#" class="under-cat">Uzpurņi suņiem</a>
+                                        <a href="#" class="under-cat">Tualete suņiem</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Kaķiem</a>
+                                        <a href="#" class="under-cat">Mitrā barība (konservi) kaķiem</a>
+                                        <a href="#" class="under-cat">Sausā kaķu barība</a>
+                                        <a href="#" class="under-cat">Gardumi kaķiem</a>
+                                        <a href="#" class="under-cat">Smiltis un pakaiši</a>
+                                        <a href="#" class="under-cat">Barības piedevas un vitamīni kaķiem</a>
+                                        <a href="#" class="under-cat">Rotaļlietas kaķiem</a>
+                                        <a href="#" class="under-cat">Kaķu nagu asināmie, mājas un slēptuves</a>
+                                        <a href="#" class="under-cat">Tualete kaķiem</a>
+                                        <a href="#" class="under-cat">Piederumi kaķu tualetei</a>
+                                        <a href="#" class="under-cat">Kopšanas līdzekļi kaķiem</a>
+                                        <a href="#" class="under-cat">Barošanas trauki</a>
+                                        <a href="#" class="under-cat">Aprūpes piederumi</a>
+                                        <a href="#" class="under-cat">Somas, būri un piederumi transportēšanai</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Grauzējiem</a>
+                                        <a href="#" class="under-cat">Barība grauzējiem</a>
+                                        <a href="#" class="under-cat">Trauki un dzirdinātavas grauzējiem</a>
+                                        <a href="#" class="under-cat">Grauzēju būri</a>
+                                        <a href="#" class="under-cat">Piederumi grauzēju būriem</a>
+                                        <a href="#" class="cat">Putniem</a>
+                                        <a href="#" class="under-cat">Barība putniem</a>
+                                        <a href="#" class="under-cat">Putnu būri</a>
+                                        <a href="#" class="under-cat">Piederumi putnu būriem</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Zivīm</a>
+                                        <a href="#" class="under-cat">Barība zivīm</a>
+                                        <a href="#" class="under-cat">Akvāriji</a>
+                                        <a href="#" class="under-cat">Piederumi akvārijiem</a>
+                                        <a href="#" class="under-cat">Ārstniecības līdzekļi zivīm</a>
+                                        <a href="#" class="cat">Reptiļiem</a>
+                                        <a href="#" class="under-cat">Barība reptiļiem</a>
+                                        <a href="#" class="under-cat">Piederumi terārijiem</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" id="showAccessories" class="menu-option">Auto preces</a>
+                            <div id="Accessories">
+                                <div class="gap-60">
+                                    <div class="col">
+                                        <a href="#" class="cat">Riepas</a>
+                                        <a href="#" class="under-cat">Ziemas riepas</a>
+                                        <a href="#" class="under-cat">Vasaras riepas</a>
+                                        <a href="#" class="cat">Ceļošanai ar auto</a>
+                                        <a href="#" class="under-cat">Jumta kastes</a>
+                                        <a href="#" class="under-cat">Jumta bagāžnieki</a>
+                                        <a href="#" class="under-cat">Velosipēdu turētāji</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">GPS, video, audio</a>
+                                        <a href="#" class="under-cat">Videoreģistratori</a>
+                                        <a href="#" class="under-cat">Automagnetolas</a>
+                                        <a href="#" class="under-cat">FM modulatori</a>
+                                        <a href="#" class="under-cat">GPS navigācijas</a>
+                                        <a href="#" class="under-cat">Aksesuāri GPS navigācijām</a>
+                                        <a href="#" class="under-cat">Skaļruņi</a>
+                                        <a href="#" class="under-cat">Jaudas pastiprinātāji</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Auto daļas un piederumi</a>
+                                        <a href="#" class="under-cat">Automašīnu paklāji</a>
+                                        <a href="#" class="under-cat">Vējstiklu slotiņas</a>
+                                        <a href="#" class="under-cat">Autospuldzes</a>
+                                        <a href="#" class="under-cat">Auto preces ziemai</a>
+                                        <a href="#" class="under-cat">Auto un citi turētāji</a>
+                                        <a href="#" class="under-cat">Auto 12-24 V lādētāji un adapteri</a>
+                                        <a href="#" class="under-cat">Auto instrumenti</a>
+                                        <a href="#" class="under-cat">Automašīnu sēdekļu pārvalki</a>
+                                        <a href="#" class="under-cat">Alkometri</a>
+                                        <a href="#" class="under-cat">Auto piederumi</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Eļļas un smērvielas</a>
+                                        <a href="#" class="under-cat">Motoreļļas</a>
+                                        <a href="#" class="under-cat">Transmisijas eļļas</a>
+                                        <a href="#" class="under-cat">Smērvielas</a>
+                                        <a href="#" class="under-cat">Speciālās eļļas</a>
+                                        <a href="#" class="under-cat">Bremžu šķidrumi</a>
+                                        <a href="#" class="cat">Ekipējums moto braukšanai</a>
+                                        <a href="#" class="under-cat">Moto ķiveres</a>
+                                        <a href="#" class="under-cat">Moto apģērbs</a>
+                                        <a href="#" class="under-cat">Moto somas</a>
+                                        <a href="#" class="under-cat">Moto aksesuāri</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" id="showSale" class="menu-option">Sadzīves tehnika</a>
+                            <div id="Sale">
+                                <div class="gap-60">
+                                    <div class="col">
+                                        <a href="#" class="cat">Lielā sadzīves tehnika</a>
+                                        <a href="#" class="under-cat">Ledusskapji</a>
+                                        <a href="#" class="under-cat">Saldētavas</a>
+                                        <a href="#" class="under-cat">Veļas mašīnas (Front)</a>
+                                        <a href="#" class="under-cat">Veļas žāvētāji</a>
+                                        <a href="#" class="under-cat">Tvaika nosūcēji</a>
+                                        <a href="#" class="under-cat">Gāzes plītis</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Mājai - mazā sadzīves tehnika</a>
+                                        <a href="#" class="under-cat">Putekļu sūcēji</a>
+                                        <a href="#" class="under-cat">Piederumi putekļu sūcējiem</a>
+                                        <a href="#" class="under-cat">Gludekļi</a>
+                                        <a href="#" class="under-cat">Tvaika tīrīšanas iekārtas</a>
+                                        <a href="#" class="under-cat">Robotizētie putekļu sūcēji</a>
+                                        <a href="#" class="under-cat">Putekļu sūcēji - slotas</a>
+                                        <a href="#" class="under-cat">Cikloniskie putekļu sūcēji</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Galda grilli, tosteri un citi</a>
+                                        <a href="#" class="under-cat">Galda grili</a>
+                                        <a href="#" class="under-cat">Tosteri</a>
+                                        <a href="#" class="under-cat">Taukvāres katli</a>
+                                        <a href="#" class="under-cat">Maizes krāsniņas</a>
+                                        <a href="#" class="under-cat">Mini plītis un cepeškrāsnis</a>
+                                        <a href="#" class="under-cat">Sendviču tosteri</a>
+                                        <a href="#" class="under-cat">Mikroviļņu krāsnis</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="cat">Iebūvējamā sadzīves tehnika</a>
+                                        <a href="#" class="under-cat">Cepeškrāsnis</a>
+                                        <a href="#" class="under-cat">Indukcijas virsmas</a>
+                                        <a href="#" class="under-cat">Tvaika nosūcēji</a>
+                                        <a href="#" class="under-cat">Trauku mašīnas (iebūvējamās)</a>
+                                        <a href="#" class="under-cat">Iebūvējamie ledusskapji</a>
+                                        <a href="#" class="under-cat">Iebūvējamās mikroviļņu krāsnis</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cart-box">
+                <hr>
+                <div class="item">
+                    <img src="4fec2e6cedbb01c3d5126f4d91882781.png" class="item-img">
+                    <div class="item-info">
+                        <div class="item-name">Atzveltnes krēsls Homla Moss Basic, melna </div>
+                        <div class="item-desc">Melnais MOSS krēsls, neraugoties uz tā vienkāršo un minimālisma dizainu,
+                            būs unikāls papildinājums gan guļamistabai, gan..</div>
+                        <div class="item-price">19.99€</div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="8df61d25617d8f499de07b3e70000f5f.png" class="item-img">
+                    <div class="item-info">
+                        <div class="item-name">Atzveltnes krēsls Homla Moss Basic, melna </div>
+                        <div class="item-desc">Melnais MOSS krēsls, neraugoties uz tā vienkāršo un minimālisma dizainu,
+                            būs unikāls papildinājums gan guļamistabai, gan..</div>
+                        <div class="item-price">1099.99€</div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="51ec3467755e6b3e8b4ffe4dafd5cef3.png" class="item-img">
+                    <div class="item-info">
+                        <div class="item-name">Atzveltnes krēsls Homla Moss Basic, melna </div>
+                        <div class="item-desc">Melnais MOSS krēsls, neraugoties uz tā vienkāršo un minimālisma dizainu,
+                            būs unikāls papildinājums gan guļamistabai, gan..</div>
+                        <div class="item-price">9.99€</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn" onclick="locToProfile()">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="col">
+                <div class="row information">
+                    <div class="info-col">
+                        <div class="col gap-15">
+                            <a href="#" class="b-text">DĀVANU KARTES</a>
+                            <a href="#" class="b-text">AKCIJAS</a>
+                            <a href="#" class="b-text">ATRAST VEIKALU</a>
+                            <a href="#" class="b-text">KĻŪSTI PAR BIEDRU</a>
+                            <a href="#" class="b-text">MUSU VEIKALI</a>
+                            <a href="#" class="b-text">SŪTĪT MUMS ATSAUKSMES</a>
+                        </div>
+                        <div class="col gap-15">
+                            <a href="#" class="b-text">Palīdzība</a>
+                            <a href="#" class="help-new">Pasutijuma status</a>
+                            <a href="#" class="help-new">Piegāde un piegāde</a>
+                            <a href="#" class="help-new">Atgriežas</a>
+                            <a href="#" class="help-new">Pasūtījuma atcelšana</a>
+                            <a href="#" class="help-new">Norēķinu iespējas</a>
+                            <a href="#" class="help-new">Dāvanu kartes atlikums</a>
+                            <a href="#" class="help-new">Sazinieties ar mums</a>
+                        </div>
+                        <div class="col gap-15">
+                            <a href="#" class="b-text">Par mums</a>
+                            <a href="#" class="help-new">Jaunumi</a>
+                            <a href="#" class="help-new">Karjera</a>
+                            <a href="#" class="help-new">Investori</a>
+                            <a href="#" class="help-new">Mērķis</a>
+                            <a href="#" class="help-new">Ilgtspējiba</a>
+                        </div>
+                    </div>
+                    <div class="row social">
+                        <iconify-icon icon="ant-design:twitter-circle-filled" width="32" height="32"
+                            class="social-media"></iconify-icon>
+                        <iconify-icon icon="ic:baseline-facebook" width="32" height="32"
+                            class="social-media"></iconify-icon>
+                        <iconify-icon icon="typcn:social-youtube-circular" width="32" height="32"
+                            class="social-media"></iconify-icon>
+                        <iconify-icon icon="entypo-social:instagram-with-circle" width="32" height="32"
+                            class="social-media"></iconify-icon>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row rights">
+                        <iconify-icon icon="mdi:location" class="location"></iconify-icon>
+                        <p class="location">Latvija</p>
+                        <p class="privacy-text">&#64;2025 Veikals, Visas tiesības aizsargātas</p>
+                    </div>
+                    <div class="row privacy">
+                        <a href="#" class="privacy-text">Ceļveži</a>
+                        <a href="#" class="privacy-text">Pārdošanas noteikumi</a>
+                        <a href="#" class="privacy-text">Lietošanas noteikumi</a>
+                        <a href="#" class="privacy-text">Privātuma politika</a>
+                        <div class="col gap-10 align-end">
+                            <div class="row gap-10 w-145">
+                                <a href="#" class="privacy-text">Jūsu privātuma izvēle</a>
+                            </div>
+                            <a href="#" class="privacy-text">Piegādes ķēžu likums</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function locToProfile() {
+        window.location.assign("profile.html")
+    }
+    let slideIndex = 0;
+    let slideInterval;
+
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("container").classList.add("blurred");
+
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("container").classList.remove("blurred");
+
+    }
+
+</script>
+
+
+</html>
