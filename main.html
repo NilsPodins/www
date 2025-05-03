@@ -20,12 +20,10 @@
                 <i class="search-icon fa-solid fa-magnifying-glass" style="display: flex;"></i>
             </div>
             <ul class="user-menu">
-                <li><a href="#" onclick="openForm()" id="openForm" class="profile"><i class="fa-solid fa-user"
-                            style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
-                <li><a href="wishlist.html" class="wish-list"><i class="fa-solid fa-heart"
-                            style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
-                <li><a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"
-                            style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
+                <li><a href="#" onclick="openForm()" id="openForm" class="profile"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li><a href="wishlist.html" class="wish-list"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
 
@@ -366,12 +364,12 @@
 
             <div class="form-popup" id="myForm">
                 <form class="form-container">
-                    <h1>Login</h1>
+                    <h1 style="color: white;">Login</h1>
 
-                    <label for="email"><b>Email</b></label>
+                    <label for="email"><b style="color: white;">Email</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required>
 
-                    <label for="psw"><b>Password</b></label>
+                    <label for="psw"><b style="color: white;">Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
                     <button type="submit" class="btn" onclick="locToProfile()">Login</button>

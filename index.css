@@ -11,6 +11,7 @@
     background-color: rgb(34, 40, 49);
     flex-direction: column;
     z-index: 1;
+    font-family: "Cascadia Code", sans-serif;
 }
 
 .header {
@@ -44,11 +45,11 @@
     border: none;
     outline: none;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .search-icon {
-    font-size: 23px;
+    font-size: 22px;
     color: black;
     width: 35px;
     height: 35px;
@@ -70,6 +71,20 @@
 .search-icon {
     cursor: pointer;
     text-decoration: none;
+    transition: ease-in-out .3;
+}
+
+.fa-heart,
+.fa-cart-shopping,
+.fa-user {
+    color: rgb(238, 238, 238);
+    font-size: 32px;
+}
+
+.fa-heart:hover,
+.fa-cart-shopping:hover,
+.fa-user:hover {
+    color: rgb(173, 172, 172);
 }
 
 ul.user-menu {
@@ -230,12 +245,12 @@ ul.user-menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .menu-option {
     width: 140px;
-    font-size: 20px;
+    font-size: 14px;
     cursor: pointer;
     text-decoration: none;
     color: rgb(238, 238, 238);
@@ -322,7 +337,7 @@ ul.user-menu {
     color: rgb(145, 145, 145);
     cursor: pointer;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .under-cat:hover {
@@ -444,7 +459,7 @@ ul.user-menu {
 
 .text-color-w {
     color: rgb(238, 238, 238);
-    font-size: 18px;
+    font-size: 14px;
 
 }
 
@@ -493,22 +508,24 @@ hr {
 
 .item-name {
     color: rgb(238, 238, 238);
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 16px;
     margin-top: 10px;
     margin-left: 20px;
 }
 
 .item-desc {
     color: rgb(238, 238, 238);
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 10px;
     margin-left: 20px;
 }
 
 .item-price {
     color: rgb(238, 238, 238);
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
+    font-weight: bold;
     justify-content: end;
     align-items: end;
     margin-right: 20px;
@@ -543,7 +560,7 @@ hr {
 .help-new {
     text-decoration: none;
     color: gray;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .help-new:hover {
@@ -569,27 +586,31 @@ hr {
 }
 
 .rights {
-    margin-left: 10vh;
-    margin-top: 50px;
-    margin-right: 82vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding-left: 50px;
 }
 
 .location {
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     margin-right: 20px;
 }
 
 .privacy {
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
     gap: 20px;
+    padding-left: 70px;
 }
 
 .privacy-text {
     color: gray;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
 }
 
@@ -597,7 +618,7 @@ hr {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .gap-10 {
@@ -618,12 +639,18 @@ hr {
 }
 
 .showcase-item {
-    height: 400px;
-    width: 300px;
+    height: 440px;
+    width: 320px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 20px;
+    cursor: pointer;
+}
+
+.showcase-item:hover {
+    background-color: rgba(224, 221, 221, 0.048);
 }
 
 .showcase-img {
@@ -633,9 +660,14 @@ hr {
 
 .showcase-item-info {
     color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .showcase-item-price {
     color: white;
     text-align: end;
+    width: 100%;
+    margin-right: 10px;
 }
