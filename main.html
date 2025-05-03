@@ -31,7 +31,7 @@
 
         <div class="main-box">
 
-            <div class="cat-box">
+            <div class="cat-box" id="cat-box">
                 <div class="category">
                     <ul class="list">
                         <li class="border"><a href="#" id="showNew" class="menu-option">Datortehnika</a>
@@ -379,7 +379,53 @@
                 </form>
             </div>
 
-
+            <div class="showcase">
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="example.png" class="showcase-img">
+                    <p class="showcase-item-info">Lorem Ipsum is simply dummy text of the printing and typesetting..</p>
+                    <p class="showcase-item-price">9.99</p>
+                </div>
+            </div>
 
         </div>
         <div class="footer">
@@ -514,6 +560,21 @@
         document.getElementById("container").classList.remove("blurred");
 
     }
+
+    let lastScrollTop = 0;
+    const header = document.getElementById("cat-box");
+
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // uz leju
+            header.style.top = "-100px"; // paslēpj galveni
+        } else {
+            // uz augšu
+            header.style.top = "70px";
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
 
 </script>
 

@@ -19,6 +19,9 @@
     background-color: rgb(57, 62, 70);
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .combine {
@@ -95,6 +98,7 @@ ul.user-menu {
 .gallery-wheel {
     width: 1000px;
     position: relative;
+    margin-top: 100px;
 }
 
 .dots {
@@ -209,6 +213,10 @@ ul.user-menu {
     height: 100px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    z-index: 2;
+    transition: top 0.3s;
+    top: 70px;
 }
 
 .category {
@@ -598,4 +606,34 @@ hr {
 .align-end {
     display: flex;
     align-items: flex-end;
+}
+
+.showcase {
+    display: grid;
+    width: 70%;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+
+.showcase-item {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.showcase-img {
+    height: 400px;
+    width: 300px;
+}
+
+.showcase-item-info {
+    color: white;
+}
+
+.showcase-item-price {
+    color: white;
+    text-align: end;
 }
