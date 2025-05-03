@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 
 .container {
     display: flex;
@@ -22,6 +24,7 @@
     position: sticky;
     top: 0;
     z-index: 3;
+    margin-bottom: 100px;
 }
 
 .combine {
@@ -98,7 +101,6 @@ ul.user-menu {
 .gallery-wheel {
     width: 1000px;
     position: relative;
-    margin-top: 100px;
 }
 
 .dots {
