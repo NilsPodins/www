@@ -115,7 +115,7 @@ ul.user-menu {
 }
 
 .gallery-wheel {
-    flex-wrap: wrap;
+    width: 1000px;
     position: relative;
 }
 
