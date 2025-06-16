@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <title>Velmes</title>
 </head>
 
 <body>
@@ -24,6 +26,8 @@
                             style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
                 <li><a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"
                             style="color: rgb(238, 238, 238); font-size: 32px;"></i></a></li>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
             </ul>
         </div>
 
@@ -422,7 +426,7 @@
                             class="social-media"></iconify-icon>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-top: 50px;">
                     <div class="row rights">
                         <iconify-icon icon="mdi:location" class="location"></iconify-icon>
                         <p class="location">Latvija</p>
@@ -444,40 +448,8 @@
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
+
 </body>
-<script>
-    function locToProfile() {
-        window.location.assign("profile.html")
-    }
-    let slideIndex = 0;
-    let slideInterval;
-
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-        document.getElementById("container").classList.add("blurred");
-
-    }
-
-    function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-        document.getElementById("container").classList.remove("blurred");
-
-    }
-
-    let lastScrollTop = 0;
-    const header = document.getElementById("cat-box");
-    window.addEventListener("scroll", function () {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-            // uz leju
-            header.style.top = "-100px"; // paslēpj galveni
-        } else {
-            // uz augšu
-            header.style.top = "70px";
-        }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-</script>
-
 
 </html>
